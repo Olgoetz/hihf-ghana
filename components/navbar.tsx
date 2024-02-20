@@ -21,7 +21,7 @@ export default function Navbar() {
             <Link
               key={link.title}
               href={link.path}
-              className="text-hih-primary uppercase hover:bg-hih-primary/10 hover:rounded-lg p-4 "
+              className="text-hih-primary uppercase  hover:bg-hih-primary/10 hover:rounded-lg p-4 "
             >
               <li>{link.title}</li>
             </Link>

@@ -42,7 +42,7 @@ export default function AboutUs() {
           &quot;Help is Here for Ghana e.V.&quot; in Deutschland zu gründen.
         </CardContent>
 
-        <div className="relative h-56 md:h-full w-full md:col-span-1 ">
+        <div className="relative h-[400px] md:h-full w-full md:col-span-1 ">
           <Image
             src="/canni.jpeg"
             alt="Canni in Ghana"
