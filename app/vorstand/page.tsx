@@ -37,7 +37,7 @@ export default async function Projects() {
             <CardTitle className="flex text-lg md:text-xl items-center text-center justify-center  font-extrabold ">
               {p.name}
             </CardTitle>
-            <CardHeader className="">{p.title}</CardHeader>
+            <CardHeader className="text-center">{p.title}</CardHeader>
             <Separator className="w-20 bg-hih-primary h-1" />
             <CardContent className="text-center">{p.description}</CardContent>
           </Card>

@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaypal } from "@fortawesome/free-brands-svg-icons";
 export default function Donate() {
   return (
-    <div className="pt-8 flex flex-col gap-y-20">
+    <div className="pt-8 flex flex-col gap-y-14">
       <h1 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
         Spenden
       </h1>

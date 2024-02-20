@@ -5,7 +5,7 @@ import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 export default function AboutUs() {
   return (
-    <div className="pt-8 flex flex-col gap-y-20">
+    <div className="pt-8 flex flex-col gap-y-14">
       <h1 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
         Über uns
       </h1>
