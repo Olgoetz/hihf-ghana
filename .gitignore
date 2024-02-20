@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 /infrastructure/.terraform/
-/infrastructure/**tfstate
+/infrastructure/**tfstate**
