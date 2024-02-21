@@ -18,11 +18,12 @@ export default async function Projects() {
       <Separator />
       <div className="grid grid-cols-1  gap-4">
         {projects.map((p: any) => (
-          <div key={p.id} className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Card
-              key={p.id}
-              className="p-2 md:p-8 space-y-4 flex flex-col bg-slate-50 opacity-70 items-center justify-center"
-            >
+          <div
+            key={p.id}
+            id={p.slug}
+            className="grid grid-cols-1 md:grid-cols-2 gap-4"
+          >
+            <Card className="p-2 md:p-8 space-y-4 flex flex-col bg-slate-50 opacity-70 items-center justify-center">
               <CardTitle className="flex text-lg md:text-xl items-center text-center justify-center  font-extrabold ">
                 {p.name}
               </CardTitle>

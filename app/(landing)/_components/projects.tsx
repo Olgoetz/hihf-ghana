@@ -34,7 +34,7 @@ export default async function Projects() {
               </CardTitle>
               <CardFooter>
                 <Link
-                  href="/projekte"
+                  href={`/projekte#${p.slug}`}
                   className="flex rounded-full justify-center py-2 items-center bg-hih-primary hover:bg-slate-400/90rounded-lg text-white mx-auto w-32"
                 >
                   <ChevronRight className="mr-3" />
