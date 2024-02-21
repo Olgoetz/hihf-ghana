@@ -41,7 +41,7 @@ export default function Header() {
         </Card>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 gap-4 pt-8">
         <div className="md:col-span-2">
           <div className="flex items-center py-4">
             <Cake className="mr-5 h-10 w-10 text-hih-primary shrink-0" />
@@ -57,23 +57,23 @@ export default function Header() {
             ermöglichen.
           </p>
         </div>
-        <div className="relative h-56 md:h-full w-full md:col-span-1 ">
+        <div className="relative h-[300px] w-full md:col-span-1 ">
           <Image
-            src="https://placehold.co/600x400.png"
-            alt="placeholder"
+            src="/hero_1.jpg"
+            alt="Helpe is Here Foundation"
             fill
-            className="object-over rounded-full"
+            className="object-cover rounded-lg"
           />
         </div>
       </div>
 
       <div className="grid md:grid-cols-3 gap-4 ">
-        <div className="relative  h-56 md:h-full w-full md:col-span-1">
+        <div className="relative h-[300px]   w-full md:col-span-1">
           <Image
-            src="https://placehold.co/600x400.png"
-            alt="placeholder"
+            src="/hero_2.jpg"
+            alt="Help is Here for Ghana e.V."
             fill
-            className="object-over rounded-full "
+            className="object-cover rounded-lg "
           />
         </div>
         <div className="md:col-span-2">

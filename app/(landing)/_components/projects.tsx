@@ -8,7 +8,7 @@ import { getProjects } from "@/lib/graphql";
 
 export default async function Projects() {
   const { projects } = (await getProjects()) as any;
-  console.log(projects[0].image.url);
+
   return (
     <div className=" flex flex-col gap-y-14">
       <h2 className="text-3xl md:text-6xl font-extrabold text-center text-hih-primary">

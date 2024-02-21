@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import { MobileNavBar } from "@/components/mobile-navbar";
 import Newsletter from "@/components/newsletter";
 import { Separator } from "@/components/ui/separator";
+import { BASE_URL } from "@/lib/constants";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,10 @@ export const metadata: Metadata = {
   ],
   description:
     "Die 'Help is Here Foundation' wurde von Canni Tee-Lard offiziell in Accra, Ghana, als gemeinnützige Organisation gegründet, mit der Vision, allen Kindern in Ghana einen fairen und uneingeschränkten Zugang zum Bildungs- und Gesundheitswesen zu ermöglichen.",
+  metadataBase:
+    process.env.NODE_ENV != "production"
+      ? new URL("http://localhost:3000")
+      : new URL(BASE_URL),
 };
 
 export default function RootLayout({
@@ -28,7 +33,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         <MobileNavBar />
-        <div className="max-w-[1200px] p-6 mx-auto ">
+        <div className="max-w-[1200px] p-4 mx-auto ">
           {children}
 
           <Separator className="my-16" />

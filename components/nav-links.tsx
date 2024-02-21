@@ -24,4 +24,8 @@ export const navlinks = [
     title: "Über uns",
     path: "/ueber-uns",
   },
+  {
+    title: "Archiv",
+    path: "/archiv",
+  },
 ];

@@ -58,3 +58,21 @@ export async function getBoardMembers() {
   const data = await request(API_ENDPOINT, GET_BOARD_MEMBERS);
   return data;
 }
+
+const GET_NEWSLETTERS = gql`
+  query Newsletters {
+    newsletters(orderBy: date_DESC) {
+      month
+      pdf {
+        url
+      }
+      id
+      date
+    }
+  }
+`;
+
+export async function getNewsletters() {
+  const data = await request(API_ENDPOINT, GET_NEWSLETTERS);
+  return data;
+}
