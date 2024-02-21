@@ -35,7 +35,7 @@ export default async function Projects() {
                 <Image
                   src={p.image.url}
                   fill
-                  className="object-contain object-center rounded-lg "
+                  className="object-cover object-center rounded-lg "
                   alt="HIHF Ghana Schooluniforms"
                 />
               </div>

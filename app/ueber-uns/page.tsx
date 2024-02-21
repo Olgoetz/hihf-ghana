@@ -47,7 +47,7 @@ export default function AboutUs() {
             src="/canni.jpeg"
             alt="Canni in Ghana"
             fill
-            className="object-over rounded-full"
+            className="object-cover rounded-full"
           />
         </div>
       </div>
