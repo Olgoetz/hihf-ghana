@@ -36,7 +36,7 @@ export default function Donate() {
               height={90}
               className="text-hih-primary"
             />
-            <p>
+            <p className="text-sm md:text-base">
               Bitte an{" "}
               <span className="text-hih-primary">info@hihf-ghana.org</span>
             </p>
@@ -48,7 +48,7 @@ export default function Donate() {
           </CardTitle>
           <CardContent className="py-4 leading-loose text-center ">
             <Banknote className="h-20 w-20 mx-auto text-hih-primary" />
-            <p>
+            <p className="text-sm md:text-base">
               Help is Here for Ghana e.V.
               <br />
               IBAN: DE88 3206 1384 1518 1840 04

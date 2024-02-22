@@ -37,3 +37,5 @@ next-env.d.ts
 
 /infrastructure/.terraform/
 /infrastructure/**tfstate**
+
+**secret**
