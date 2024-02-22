@@ -43,7 +43,7 @@ export async function getFiles() {
 
 const GET_BOARD_MEMBERS = gql`
   query BoardMembers {
-    boardMembers {
+    boardMembers(orderBy: order_ASC) {
       id
       image {
         url
