@@ -72,3 +72,11 @@ resource "vercel_project" "this" {
 #   value      = values(local.env_variables_prod)[count.index]
 #   target     = ["production"]
 # }
+
+resource "vercel_project_environment_variable" "hygraph_webhook" {
+
+  project_id = vercel_project.this.id
+  key        = "HYGRAPH_WEBHOOK_SECRET"
+  value      = var.hygraph_webhook_secret
+  target     = ["development", "preview", "production"]
+}
