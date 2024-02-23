@@ -6,6 +6,7 @@ import { getCurrentYear } from "@/lib/helpers";
 import { getFiles } from "@/lib/graphql";
 import Image from "next/image";
 import Newsletter from "./newsletter";
+import PayPalbutton from "./paypal-button";
 export default async function Footer() {
   const { documents } = (await getFiles()) as any;
 
@@ -16,6 +17,7 @@ export default async function Footer() {
   const statute = documents.filter((file: any) => file.label === "statute")[0];
   return (
     <div className="">
+      {/* <PayPalbutton /> */}
       <div className="grid md:grid-cols-3 px-8 py-14 gap-4 items-start bg-black text-white">
         <div className="grid gap-4 justify-center leading-3">
           <h4 className="font-bold uppercase py-4 text-center">Adresse</h4>

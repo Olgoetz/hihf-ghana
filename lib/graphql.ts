@@ -77,3 +77,19 @@ export async function getNewsletters() {
   const data = await request(API_ENDPOINT, GET_NEWSLETTERS);
   return data;
 }
+
+const GET_GALLERY_IMAGES = gql`
+  query Gallery {
+    galleries {
+      images(first: 12) {
+        id
+        url
+      }
+    }
+  }
+`;
+
+export async function getGalleryImages() {
+  const data = await request(API_ENDPOINT, GET_GALLERY_IMAGES);
+  return data;
+}
