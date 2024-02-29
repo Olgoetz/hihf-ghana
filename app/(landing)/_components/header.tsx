@@ -47,6 +47,7 @@ export default function Header() {
             <Cake className="mr-5 h-10 w-10 text-hih-primary shrink-0" />
             <h2 className="text-lg md:text-xl font-bold">
               2015 - Das Gründungsjahr der &quot;Help is Here Foundation&quot;
+              in Ghana
             </h2>
           </div>
           <p className="leading-loose">
@@ -87,8 +88,8 @@ export default function Header() {
           <p className="leading-loose">
             Wir gründeten den Schwesterverein &quot;Help is Here for Ghana
             e.V.&quot;, um unserer langjährigen Freundin Canni sowie ihrer
-            fantastischen Arbeit über die letzten 6 Jahre zu unterstützen und um
-            einen Beitrag zum Erreichen der Vision zu leisten.
+            fantastischen Arbeit zu unterstützen und um einen Beitrag zum
+            Erreichen der Vision zu leisten.
           </p>
         </div>
       </div>
