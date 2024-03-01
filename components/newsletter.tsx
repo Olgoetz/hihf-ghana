@@ -8,10 +8,9 @@ function Newsletter() {
         Newsletter
       </h2>
       <p className="leading-loose text-center py-8">
-        Wir verschicken monatlich einen Newsletter in dem wir über den aktuellen
-        Stand unserer Projekte, Aktionen und Sitzungen bzw.
-        Mitgliederversammlungen informieren. Du kannst dich jederzeit wieder
-        abmelden.
+        Wir verschicken alle zwei Monate einen Newsletter per Email, in dem wir
+        über den aktuellen Stand unserer Projekte, Aktionen und Vereinsarbeit
+        informieren. Du kannst dich jederzeit wieder abmelden.
       </p>
       <iframe
         src="https://te7f3b1bc.emailsys1a.net/248/462/7aab254095/subscribe/form.html?_g=1708449894"

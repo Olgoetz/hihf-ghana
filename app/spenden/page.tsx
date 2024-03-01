@@ -16,8 +16,8 @@ export default function Donate() {
 
       <p className="text-lg text-center leading-loose">
         Gerne kannst Du über folgende Optionen spenden. Sämtliche Spenden gehen
-        zu 100% an die Help is Here Foundation. Falls gewünscht stellen wir Dir
-        eine Spendenquittung aus. Schreibe uns dafür einfach eine Nachricht{" "}
+        zu 100% an die Help is Here Foundation. Falls gewünscht, stellen wir Dir
+        eine Spendenquittung aus. Schreibe uns dafür einfach eine Nachricht an{" "}
         <a href="mailto:info@hihf-ghana.org" className="text-hih-primary">
           info@hihf-ghana.org
         </a>

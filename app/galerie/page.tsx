@@ -15,7 +15,7 @@ export default async function Projects() {
   return (
     <div className="pt-8 flex flex-col gap-y-14">
       <h2 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
-        Gallerie
+        Galerie
       </h2>
       <Separator />
       <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 justify-center z-10">

@@ -81,14 +81,14 @@ export default function Header() {
           <div className="flex items-center  py-4">
             <CalendarClock className="mr-5 h-10 w-10 text-hih-primary shrink-0" />
             <h2 className="text-lg md:text-xl font-bold">
-              2021 - Das Gründungsjahr von &quot;Help is Here for Ghana e.
-              V.&quot;
+              2021 - Das Gründungsjahr von &quot;Help is Here for Ghana
+              e.V.&quot;
             </h2>
           </div>
           <p className="leading-loose">
             Wir gründeten den Schwesterverein &quot;Help is Here for Ghana
-            e.V.&quot;, um unserer langjährigen Freundin Canni sowie ihrer
-            fantastischen Arbeit zu unterstützen und um einen Beitrag zum
+            e.V.&quot;, um unsere langjährige Freundin Canni sowie ihre
+            fantastische Arbeit zu unterstützen und um einen Beitrag zum
             Erreichen der Vision zu leisten.
           </p>
         </div>

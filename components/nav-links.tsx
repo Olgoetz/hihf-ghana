@@ -12,8 +12,8 @@ export const navlinks = [
     path: "/spenden",
   },
   {
-    title: "Gallerie",
-    path: "/gallerie",
+    title: "Galerie",
+    path: "/galerie",
   },
 
   {

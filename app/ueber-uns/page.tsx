@@ -13,7 +13,7 @@ export default function AboutUs() {
       <div className="grid md:grid-cols-2 gap-4">
         <CardContent className=" text-left">
           <p>
-            Help is Here Foundation Ghana wurde 2013 in{" "}
+            Die Help is Here Foundation Ghana wurde 2013 in{" "}
             <a
               className="text-hih-primary font-bold"
               href="https://www.google.com/maps/place/Accra,+Ghana/@5.5912087,-0.1797294,12z/data=!3m1!4b1!4m6!3m5!1s0xfdf9084b2b7a773:0xbed14ed8650e2dd3!8m2!3d5.5592846!4d-0.1974306!16zL20vMGZueWM?entry=ttu"
@@ -22,27 +22,26 @@ export default function AboutUs() {
             </a>
             , Ghana, von Cannizzarra Tee-Lard gegründet. Nach ein paar kleineren
             Projekten wurde die Organisation im Jahr 2015 offiziell registriert
-            und wird seitdem als gemeinnütziger Verein in Ghana geführt. Canni's
+            und wird seitdem als gemeinnütziger Verein in Ghana geführt. Cannis
             primäre Motivation für die Gründung des Vereins war es, die Kinder
-            und Jugendlichen ihrer Heimatgemeinde in Labadi, Accra mit kleinen
+            und Jugendlichen ihrer Heimatgemeinde in Labadi, Accra, mit kleinen
             Initiativen nachhaltig zu unterstützen, um ihnen eine Perspektive
             für eine bessere Zukunft zu geben. Seitdem hat sich die Organisation
             stetig weiterentwickelt und die Projekte erstrecken sich zunehmend
             auf weitere Regionen in Ghana. Damit die Spendengelder unmittelbar
             und zielgerichtet bei den Kindern ankommen, achtet Canni stets
-            darauf die administrativen Kosten so gering wie möglich zu halten.
+            darauf, die administrativen Kosten so gering wie möglich zu halten.
           </p>
           <br />
           <p>
-            Schon seit mehreren Jahren unterstützen wir, Canni und ihren Verein.
+            chon seit mehreren Jahren unterstützen wir Canni und ihren Verein.
             Uns vereint eine langjährige Freundschaft zu Canni, unsere durch
             persönliche Aufenthalte gewachsene Liebe zu Ghana und unser
-            unbändiger Wille einen Beitrag zu leisten, um Kindern in Ghana eine
+            unbändiger Wille, einen Beitrag zu leisten, um Kindern in Ghana eine
             hoffnungsvolle und gleichberechtigte Zukunftsperspektive zu
-            ermöglichen. 2021 haben wir uns dann entschlossen unsere
-            Unterstützung zu bündeln und den als gemeinnützig anerkannten
-            Schwestervereins &quot;Help is Here for Ghana e.V.&quot; in
-            Deutschland zu gründen.
+            ermöglichen. 2021 haben wir uns entschlossen, unsere Unterstützung
+            zu bündeln und den als gemeinnützig anerkannten Schwesterverein
+            &quot;Help is Here for Ghana e.V.&quot; in Deutschland zu gründen.
           </p>
         </CardContent>
 
