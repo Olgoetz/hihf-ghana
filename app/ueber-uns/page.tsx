@@ -34,7 +34,7 @@ export default function AboutUs() {
           </p>
           <br />
           <p>
-            chon seit mehreren Jahren unterstützen wir Canni und ihren Verein.
+            Schon seit mehreren Jahren unterstützen wir Canni und ihren Verein.
             Uns vereint eine langjährige Freundschaft zu Canni, unsere durch
             persönliche Aufenthalte gewachsene Liebe zu Ghana und unser
             unbändiger Wille, einen Beitrag zu leisten, um Kindern in Ghana eine
