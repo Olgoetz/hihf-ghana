@@ -29,7 +29,7 @@ const ScrollToTopButton: React.FC = () => {
   return (
     <button
       className={clsx(
-        "fixed bottom-6 right-6 bg-hih-primary text-white p-4 rounded-full cursor-pointer",
+        "fixed bottom-6 right-6 bg-hih-primary text-white p-4 rounded-full cursor-pointer z-[1000]",
         { block: isVisible },
         { hidden: !isVisible }
       )}

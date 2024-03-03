@@ -15,17 +15,17 @@ resource "vercel_project" "this" {
 
 }
 
-# resource "vercel_project_domain" "prod" {
-#   project_id           = vercel_project.novotec.id
-#   domain               = "novotec-koeln.de"
-#   redirect             = vercel_project_domain.prod2.domain
-#   redirect_status_code = 301
-# }
+resource "vercel_project_domain" "prod" {
+  project_id           = vercel_project.this.id
+  domain               = "hihf-ghana.org"
+  redirect             = vercel_project_domain.prod2.domain
+  redirect_status_code = 301
+}
 
-# resource "vercel_project_domain" "prod2" {
-#   project_id = vercel_project.novotec.id
-#   domain     = "www.novotec-koeln.de"
-# }
+resource "vercel_project_domain" "prod2" {
+  project_id = vercel_project.this.id
+  domain     = "www.hihf-ghana.org"
+}
 
 # locals {
 #   env_variables_all = {
