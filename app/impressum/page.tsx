@@ -17,6 +17,16 @@ export default async function Projects() {
       </h1>
       <Separator />
       <div>
+        <div className="pb-4">
+          <h2 className="font-bold pb-4">Design und Umsetzung</h2>
+          <p>
+            Oliver Götz:{" "}
+            <a className="text-hih-primary" href="mailto:info@goetz-oliver.de">
+              info@goetz-oliver.de
+            </a>
+          </p>
+        </div>
+
         <h2 className="font-bold pb-4">Angaben gemäß § 5 TMG</h2>
         <p>
           Help is Here for Ghana e.V. <br />

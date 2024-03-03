@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/gallerie`,
+      url: `${BASE_URL}/galerie`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,

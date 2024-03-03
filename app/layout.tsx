@@ -7,7 +7,6 @@ import { MobileNavBar } from "@/components/mobile-navbar";
 import Newsletter from "@/components/newsletter";
 import { Separator } from "@/components/ui/separator";
 import { BASE_URL } from "@/lib/constants";
-import { Scroll } from "lucide-react";
 import ScrollToTopButton from "@/components/scroll-to-top-button";
 
 const inter = Inter({ subsets: ["latin"] });
