@@ -35,7 +35,7 @@ export default function Header() {
             Unsere Mission ist es mit zielgerichteten Projekten Kindern aus
             benachteiligten Gesellschaftsschichten Zugang zu Bildung und zum
             Gesundheitswesen zu verschaffen und diese Projekte finanziell mit
-            der Hilfe unserer Spender zu unterstützen und erfolgreich
+            der Hilfe unserer Spender*innen zu unterstützen und erfolgreich
             umzusetzen.
           </CardContent>
         </Card>
