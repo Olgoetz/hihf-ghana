@@ -16,9 +16,9 @@ export default async function Projects() {
 
   return (
     <div className="pt-8 flex flex-col gap-y-14">
-      <h2 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
+      <h1 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
         Vorstand
-      </h2>
+      </h1>
       <Separator />
       <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
         {boardMembers.map((p: any) => (

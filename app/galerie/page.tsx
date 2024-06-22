@@ -4,7 +4,7 @@ import { getGalleryImages, getProjects } from "@/lib/graphql";
 import { Gallery } from "next-gallery";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
-export default async function Projects() {
+export default async function Galery() {
   const { galleries } = (await getGalleryImages()) as any;
 
   const images = Array.from(galleries[0].images, (img: any) => ({
@@ -14,9 +14,9 @@ export default async function Projects() {
 
   return (
     <div className="pt-8 flex flex-col gap-y-14">
-      <h2 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
+      <h1 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
         Galerie
-      </h2>
+      </h1>
       <Separator />
       <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 justify-center z-10">
         {images &&

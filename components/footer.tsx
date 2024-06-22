@@ -25,6 +25,15 @@ export default async function Footer() {
           <p>Parkstraße 22</p>
           <p>51427 Bergisch Gladbach </p>
           <a href="mailto:info@hihf-ghana.org">info@hihf-ghana.org</a>
+
+          <h4 className="font-bold uppercase py-4 md:mt-8 text-center">
+            Information
+          </h4>
+          <Link href="/projekte/info#bildungssystem">Bildungssystem</Link>
+          <Link href="/projekte/info#gesundheitssystem">Gesundheitssystem</Link>
+          <Link href="/projekte/info#entwicklungszusammenarbeit">
+            Entwicklungszusammenarbeit
+          </Link>
         </div>
 
         <div className="grid gap-2 leading-3 text-center justify-center">
