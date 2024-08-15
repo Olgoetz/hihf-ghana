@@ -61,7 +61,7 @@ export default async function Footer() {
             </Link>
           </div>
           <h4 className="font-bold uppercase py-4 md:mt-8">Partner</h4>
-          <Link href="https://ghanaforumnrw.wordpress.com/" target="_blank">
+          <Link href="https://ghanaforum.nrw" target="_blank">
             <Image
               src="/ghana_forum.png"
               alt="Ghana Forum NRW"
