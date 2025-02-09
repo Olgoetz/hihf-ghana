@@ -1,5 +1,4 @@
 import React from "react";
-import { Separator } from "./ui/separator";
 
 function Newsletter() {
   return (

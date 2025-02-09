@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
-import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardTitle, CardContent } from "@/components/ui/card";
 import { getProjects } from "@/lib/graphql";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import { Separator } from "@/components/ui/separator";

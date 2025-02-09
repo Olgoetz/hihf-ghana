@@ -1,7 +1,7 @@
 import React from "react";
 
-import { getGalleryImages, getProjects } from "@/lib/graphql";
-import { Gallery } from "next-gallery";
+import { getGalleryImages } from "@/lib/graphql";
+
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 export default async function Galery() {

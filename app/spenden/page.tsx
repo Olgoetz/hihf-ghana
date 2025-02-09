@@ -1,6 +1,5 @@
 import React from "react";
 
-import Image from "next/image";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Banknote } from "lucide-react";

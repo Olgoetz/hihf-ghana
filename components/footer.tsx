@@ -7,12 +7,14 @@ import { getFiles } from "@/lib/graphql";
 import Image from "next/image";
 import Newsletter from "./newsletter";
 import PayPalbutton from "./paypal-button";
+import { logger } from "@/lib/utils";
 export default async function Footer() {
   const { documents } = (await getFiles()) as any;
 
   const memberShipApllication = documents.filter(
     (file: any) => file.label === "membership_application"
   )[0];
+  logger("info", "Footer documents", documents);
 
   const statute = documents.filter((file: any) => file.label === "statute")[0];
   return (

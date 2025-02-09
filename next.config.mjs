@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "media.graphassets.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "eu-central-1-shared-euc1-02.graphassets.com",
+        port: "",
+      },
     ],
   },
 };
