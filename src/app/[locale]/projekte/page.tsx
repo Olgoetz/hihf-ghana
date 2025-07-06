@@ -1,17 +1,20 @@
 import React from "react";
-
 import Image from "next/image";
 import { Card, CardTitle, CardContent } from "@/components/ui/card";
 import { getProjects } from "@/lib/graphql";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import { Separator } from "@/components/ui/separator";
+import { getLocale, getTranslations } from "next-intl/server";
+
 export default async function Projects() {
-  const { projects } = (await getProjects()) as any;
+  const t = await getTranslations("projekte");
+  const locale = await getLocale();
+  const { projects } = (await getProjects(locale)) as any;
 
   return (
     <div className="pt-8 flex flex-col gap-y-14">
       <h1 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
-        Projekte
+        {t("title")}
       </h1>
       <Separator />
       <div className="grid grid-cols-1  gap-4">

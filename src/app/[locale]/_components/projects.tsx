@@ -1,4 +1,5 @@
 import React from "react";
+import { getTranslations, getLocale } from "next-intl/server";
 
 import Image from "next/image";
 import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
@@ -7,12 +8,15 @@ import { ChevronRight } from "lucide-react";
 import { getProjects } from "@/lib/graphql";
 
 export default async function Projects() {
-  const { projects } = (await getProjects()) as any;
+  const t = await getTranslations("projekte");
+  const locale = await getLocale();
+  console.log("Locale:", locale);
+  const { projects } = (await getProjects(locale)) as any;
 
   return (
     <div className=" flex flex-col gap-y-14">
       <h2 className="text-3xl md:text-6xl font-extrabold text-center text-hih-primary">
-        Projekte
+        {t("title")}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -38,7 +42,7 @@ export default async function Projects() {
                   className="flex rounded-full justify-center py-2 items-center bg-hih-primary hover:bg-slate-400/90rounded-lg text-white mx-auto w-32"
                 >
                   <ChevronRight className="mr-3" />
-                  <p>Details</p>
+                  <p>{t("details")}</p>
                 </Link>
               </CardFooter>
             </div>

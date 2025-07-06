@@ -1,16 +1,14 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
 function Newsletter() {
+  const t = useTranslations("newsletter");
   return (
     <div className="mb-8">
       <h2 className="text-2xl md:text-4xl font-extrabold text-center text-hih-primary">
-        Newsletter
+        {t("title")}
       </h2>
-      <p className="leading-loose text-center py-8">
-        Wir verschicken alle zwei Monate einen Newsletter per Email, in dem wir
-        über den aktuellen Stand unserer Projekte, Aktionen und Vereinsarbeit
-        informieren. Du kannst dich jederzeit wieder abmelden.
-      </p>
+      <p className="leading-loose text-center py-8">{t("description")}</p>
       <iframe
         src="https://te7f3b1bc.emailsys1a.net/248/462/7aab254095/subscribe/form.html?_g=1708449894"
         width="100%"

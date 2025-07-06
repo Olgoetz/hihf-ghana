@@ -3,8 +3,8 @@ import { request, gql } from "graphql-request";
 const API_ENDPOINT =
   "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clsrm6rvb1e7w01w7voour3rp/master";
 const GET_PROJECTS = gql`
-  query Projects {
-    projects {
+  query Projects($locale: Locale!) {
+    projects(locales: [$locale]) {
       id
       name
       slug
@@ -19,8 +19,10 @@ const GET_PROJECTS = gql`
 `;
 
 // Function to fetch data
-export async function getProjects() {
-  const data = await request(API_ENDPOINT, GET_PROJECTS);
+export async function getProjects(locale = "de") {
+  console.log("Fetching projects for locale:", locale);
+  const data = await request(API_ENDPOINT, GET_PROJECTS, { locale });
+  console.log("Projects fetched:", data);
   return data;
 }
 

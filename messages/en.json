@@ -1,0 +1,97 @@
+{
+  "header": {
+    "title": "Help is Here for Ghana e.V.",
+    "visionTitle": "Our Vision",
+    "visionContent": "To provide children and young people in Ghana with fair and unrestricted access to education and healthcare, and to assist them in setting the course for their future. A future where no one is left behind and all children have equal starting conditions, regardless of their social and ethnic background.",
+    "missionTitle": "Our Mission",
+    "missionContent": "Our mission is to provide children from disadvantaged social backgrounds with access to education and healthcare through targeted projects, and to support and successfully implement these projects financially with the help of our donors.",
+    "foundation2015Title": "2015 - The founding year of the 'Help is Here Foundation' in Ghana",
+    "foundation2015Content": "The 'Help is Here Foundation' was officially founded by Canni Tee-Lard in Accra, Ghana, as a non-profit organization, with the vision of providing all children in Ghana with fair and unrestricted access to education and healthcare.",
+    "foundation2021Title": "2021 - The founding year of 'Help is Here for Ghana e.V.'",
+    "foundation2021Content": "We founded the sister association 'Help is Here for Ghana e.V.' to support our long-time friend Canni and her fantastic work, and to contribute to achieving the vision."
+  },
+  "nav": {
+    "home": "Home",
+    "projekte": "Projects",
+    "spenden": "Donate",
+    "galerie": "Gallery",
+    "vorstand": "Board",
+    "ueber_uns": "About us",
+    "archiv": "Archive"
+  },
+  "navlinks": {
+    "Home": "Home",
+    "Projekte": "Projects",
+    "Spenden": "Donate",
+    "Galerie": "Gallery",
+    "Vorstand": "Board",
+    "Über uns": "About us",
+    "Archiv": "Archive"
+  },
+  "local": {
+    "title": "Local"
+  },
+  "footer": {
+    "address": "Address",
+    "information": "Information",
+    "bildungssystem": "Education system",
+    "gesundheitssystem": "Health system",
+    "entwicklungszusammenarbeit": "Development cooperation",
+    "social_media": "Social Media",
+    "sonstiges": "Miscellaneous",
+    "partner": "Partners"
+  },
+  "paypal": {
+    "placeholder": "Enter donation amount"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "We send out a newsletter every two months by email, informing you about the current status of our projects, activities, and club work. You can unsubscribe at any time."
+  },
+  "archiv": { "title": "Archive" },
+  "galerie": { "title": "Gallery" },
+  "impressum": {
+    "title": "Imprint",
+    "design": "Design and Implementation",
+    "by": "Oliver Götz",
+    "contact": "info@goetz-oliver.de",
+    "register": "Information according to § 5 TMG",
+    "represented_by": "Represented by",
+    "register_entry": "Register entry",
+    "register_address": "Help is Here for Ghana e.V. <br />Parkstraße 22 <br />51427 Bergisch Gladbach",
+    "register_entry_text": "Entry in the register of associations. <br />Register court: Bergisch Gladbach <br />Register number: 20976",
+    "liability": "Disclaimer",
+    "liability_content": "Liability for content",
+    "liability_content_text": "The contents of our pages were created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the contents. As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to § 7 para.1 TMG. According to §§ 8 to 10 TMG, however, we are not obligated as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of such infringements, we will remove this content immediately.",
+    "liability_links": "Liability for links",
+    "liability_links_text": "Our offer contains links to external third-party websites over whose content we have no influence. Therefore, we cannot accept any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognizable at the time of linking. However, permanent control of the content of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements, we will remove such links immediately.",
+    "copyright": "Copyright",
+    "copyright_text": "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon becoming aware of any infringements, we will remove such content immediately.",
+    "data_protection": "Data protection",
+    "data_protection_text": "The use of our website is usually possible without providing personal data. Insofar as personal data (such as name, address, or email addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent. We point out that data transmission over the Internet (e.g., when communicating by e-mail) can have security gaps. Complete protection of data against access by third parties is not possible. The use of contact data published within the scope of the imprint obligation by third parties for sending unsolicited advertising and information materials is hereby expressly prohibited. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam emails.",
+    "cookies": "Cookies",
+    "cookies_text": "We do not use cookies."
+  },
+  "projekte": { "title": "Projects", "details": "Details" },
+  "spenden": {
+    "title": "Donate",
+    "paypal": "PayPal",
+    "bank": "Bank Transfer",
+    "description": "You are welcome to donate using the following options. All donations go 100% to the Help is Here Foundation. If you wish, we will issue you a donation receipt. Just send us a message at info@hihf-ghana.org.",
+    "paypal_instructions": "Please send to info@hihf-ghana.org",
+    "bank_details": "Help is Here for Ghana e.V.",
+    "iban": "IBAN: DE88 3206 1384 1518 1840 04",
+    "bic": "BIC: GENODED1GDL",
+    "reference": "Reference: Donation"
+  },
+  "ueber_uns": {
+    "title": "About us",
+    "p1": "The Help is Here Foundation Ghana was founded in 2013 in <location>Accra</location>, Ghana, by Cannizzarra Tee-Lard. After a few smaller projects, the organization was officially registered in 2015 and has since been run as a non-profit association in Ghana. Canni's primary motivation for founding the association was to sustainably support the children and young people of her home community in Labadi, Accra, with small initiatives to give them a perspective for a better future. Since then, the organization has continued to develop and the projects are increasingly extending to other regions in Ghana. To ensure that donations reach the children directly and in a targeted manner, Canni always makes sure to keep administrative costs as low as possible.",
+    "p2": "For several years now, we have been supporting Canni and her association. We are united by a long-standing friendship with Canni, our love for Ghana, which has grown through personal stays, and our unbridled desire to make a contribution to giving children in Ghana a hopeful and equal future. In 2021, we decided to pool our support and founded the sister association \"Help is Here for Ghana e.V.\"; in Germany, which is recognized as a non-profit organization."
+  },
+  "vorstand": { "title": "Board" },
+  "home": { "title": "Help is Here for Ghana e.V." },
+  "metaData": {
+    "shortDescription": "The 'Help is Here Foundation' was officially founded by Canni Tee-Lard in Accra, Ghana, as a non-profit organization, with the vision of providing all children in Ghana with fair and unrestricted access to education and healthcare."
+  }
+}

@@ -1,19 +1,16 @@
-import React from "react";
-
 import { Card, CardTitle, CardHeader } from "@/components/ui/card";
-import Link from "next/link";
 import { DownloadCloud } from "lucide-react";
 import { getNewsletters } from "@/lib/graphql";
-
 import { Separator } from "@/components/ui/separator";
-
 import dayjs from "dayjs";
-import updateLocale from "dayjs/plugin/updateLocale";
 import "dayjs/locale/de";
+import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 
 dayjs.locale("de");
 
 export default async function Projects() {
+  const t = await getTranslations("archiv");
   const { newsletters } = (await getNewsletters()) as any;
   const formatDate = (date: string) => {
     return dayjs(date).format("MMMM YYYY");
@@ -21,7 +18,7 @@ export default async function Projects() {
   return (
     <div className="pt-8 flex flex-col gap-y-14">
       <h1 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
-        Archiv
+        {t("title")}
       </h1>
       <Separator />
 

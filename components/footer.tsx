@@ -1,6 +1,6 @@
 import { CopyrightIcon, Facebook, File, Instagram, Link2 } from "lucide-react";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CMSLink from "./cms-link";
 import { getCurrentYear } from "@/lib/helpers";
 import { getFiles } from "@/lib/graphql";
@@ -8,7 +8,11 @@ import Image from "next/image";
 import Newsletter from "./newsletter";
 import PayPalbutton from "./paypal-button";
 import { logger } from "@/lib/utils";
+import { getLocale, getTranslations } from "next-intl/server";
+
 export default async function Footer() {
+  const t = await getTranslations("footer");
+  const locale = await getLocale();
   const { documents } = (await getFiles()) as any;
 
   const memberShipApllication = documents.filter(
@@ -22,24 +26,30 @@ export default async function Footer() {
       {/* <PayPalbutton /> */}
       <div className="grid md:grid-cols-3 px-8 py-14 gap-4 items-start bg-black text-white">
         <div className="grid gap-4 justify-center leading-3">
-          <h4 className="font-bold uppercase py-4 text-center">Adresse</h4>
+          <h4 className="font-bold uppercase py-4 text-center">
+            {t("address")}
+          </h4>
           <p>Help is Here for Ghana e.V.</p>
           <p>Parkstraße 22</p>
           <p>51427 Bergisch Gladbach </p>
           <a href="mailto:info@hihf-ghana.org">info@hihf-ghana.org</a>
 
           <h4 className="font-bold uppercase py-4 md:mt-8 text-center">
-            Information
+            {t("information")}
           </h4>
-          <Link href="/projekte/info#bildungssystem">Bildungssystem</Link>
-          <Link href="/projekte/info#gesundheitssystem">Gesundheitssystem</Link>
+          <Link href="/projekte/info#bildungssystem">
+            {t("bildungssystem")}
+          </Link>
+          <Link href="/projekte/info#gesundheitssystem">
+            {t("gesundheitssystem")}
+          </Link>
           <Link href="/projekte/info#entwicklungszusammenarbeit">
-            Entwicklungszusammenarbeit
+            {t("entwicklungszusammenarbeit")}
           </Link>
         </div>
 
         <div className="grid gap-2 leading-3 text-center justify-center">
-          <h4 className="font-bold uppercase py-4">Social Media</h4>
+          <h4 className="font-bold uppercase py-4">{t("social_media")}</h4>
 
           <div className="grid grid-cols-2 gap-4">
             <Link
@@ -62,7 +72,7 @@ export default async function Footer() {
               </div>
             </Link>
           </div>
-          <h4 className="font-bold uppercase py-4 md:mt-8">Partner</h4>
+          <h4 className="font-bold uppercase py-4 md:mt-8">{t("partner")}</h4>
           <Link href="https://ghanaforum.nrw" target="_blank">
             <Image
               src="/ghana_forum.png"
@@ -74,12 +84,20 @@ export default async function Footer() {
         </div>
 
         <div className="grid gap-4 justify-center leading-3">
-          <h4 className="font-bold uppercase py-4 text-center">Sonstiges</h4>
+          <h4 className="font-bold uppercase py-4 text-center">
+            {t("sonstiges")}
+          </h4>
           <ul className="flex flex-col gap-4">
-            <CMSLink href={statute.file.url} linkText="Satzung" icon={File} />
+            <CMSLink
+              href={statute.file.url}
+              linkText={locale === "de" ? "Satzung" : "Statute"}
+              icon={File}
+            />
             <CMSLink
               href={memberShipApllication.file.url}
-              linkText="Mitgliedsantrag"
+              linkText={
+                locale === "de" ? "Mitgliedsantrag" : "Membership Application"
+              }
               icon={File}
             />
             <CMSLink href="/impressum" linkText="Impressum" icon={Link2} />

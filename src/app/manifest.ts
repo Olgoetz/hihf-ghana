@@ -1,11 +1,17 @@
 import { MetadataRoute } from "next";
+import { getTranslations } from "next-intl/server";
+import { routing } from "../i18n/routing";
 
-export default function manifest(): MetadataRoute.Manifest {
+export default async function manifest(): Promise<MetadataRoute.Manifest> {
+  const t = await getTranslations({
+    locale: routing.defaultLocale,
+    namespace: "metaData",
+  });
+
   return {
     name: "Help is Here for Ghana e.V.",
     short_name: "HIHF Ghana e.V.",
-    description:
-      "Die 'Help is Here Foundation' wurde von Canni Tee-Lard offiziell in Accra, Ghana, als gemeinnützige Organisation gegründet, mit der Vision, allen Kindern in Ghana einen fairen und uneingeschränkten Zugang zum Bildungs- und Gesundheitswesen zu ermöglichen.",
+    description: t("shortDescription"),
 
     start_url: "/",
     display: "standalone",

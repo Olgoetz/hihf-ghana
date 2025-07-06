@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { payPalInitialOptions } from "@/lib/constants";
+import { useTranslations } from "next-intl";
 
 function PayPalbutton() {
+  const t = useTranslations("paypal");
   const [donationAmount, setDonationAmount] = useState(""); // State to store donation amount
   const [error, setError] = useState(""); // State to store validation error message
 
@@ -18,7 +20,7 @@ function PayPalbutton() {
           type="text"
           value={donationAmount}
           onChange={handleDonationChange}
-          placeholder="Spendenbetrag eingeben"
+          placeholder={t("placeholder")}
         />
       </div>
       <PayPalButtons

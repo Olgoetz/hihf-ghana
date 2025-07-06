@@ -1,4 +1,4 @@
-export const navlinks = [
+export const navLinks = [
   {
     title: "Home",
     path: "/",
@@ -15,7 +15,6 @@ export const navlinks = [
     title: "Galerie",
     path: "/galerie",
   },
-
   {
     title: "Vorstand",
     path: "/vorstand",

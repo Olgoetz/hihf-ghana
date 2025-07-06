@@ -1,12 +1,12 @@
 import React from "react";
-
 import { getGalleryImages } from "@/lib/graphql";
-
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
-export default async function Galery() {
-  const { galleries } = (await getGalleryImages()) as any;
+import { getTranslations } from "next-intl/server";
 
+export default async function Galery() {
+  const t = await getTranslations("galerie");
+  const { galleries } = (await getGalleryImages()) as any;
   const images = Array.from(galleries[0].images, (img: any) => ({
     id: img.id,
     src: img.url,
@@ -15,7 +15,7 @@ export default async function Galery() {
   return (
     <div className="pt-8 flex flex-col gap-y-14">
       <h1 className="text-4xl md:text-6xl font-extrabold text-center text-hih-primary">
-        Galerie
+        {t("title")}
       </h1>
       <Separator />
       <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 justify-center z-10">

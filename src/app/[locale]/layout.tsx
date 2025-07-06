@@ -8,6 +8,9 @@ import Newsletter from "@/components/newsletter";
 import { Separator } from "@/components/ui/separator";
 import { BASE_URL } from "@/lib/constants";
 import ScrollToTopButton from "@/components/scroll-to-top-button";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/src/i18n/routing";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,24 +27,33 @@ export const metadata: Metadata = {
       : new URL(BASE_URL),
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}) {
+  // Ensure that the incoming `locale` is valid
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
   return (
-    <html lang="de">
+    <html lang={locale}>
       <body className={inter.className}>
-        <Navbar />
-        <MobileNavBar />
-        <div className="max-w-[1200px] p-4 mx-auto ">
-          {children}
+        <NextIntlClientProvider>
+          <Navbar />
+          <MobileNavBar />
+          <div className="max-w-[1200px] p-4 mx-auto ">
+            {children}
 
-          <Separator className="my-16" />
-          <Newsletter />
-        </div>
-        <Footer />
-        <ScrollToTopButton />
+            <Separator className="my-16" />
+            <Newsletter />
+          </div>
+          <Footer />
+          <ScrollToTopButton />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
