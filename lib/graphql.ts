@@ -4,7 +4,7 @@ const API_ENDPOINT =
   "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clsrm6rvb1e7w01w7voour3rp/master";
 const GET_PROJECTS = gql`
   query Projects($locale: Locale!) {
-    projects(locales: [$locale]) {
+    projects(locales: [$locale, en]) {
       id
       name
       slug
@@ -19,7 +19,7 @@ const GET_PROJECTS = gql`
 `;
 
 // Function to fetch data
-export async function getProjects(locale = "de") {
+export async function getProjects(locale = "en") {
   console.log("Fetching projects for locale:", locale);
   const data = await request(API_ENDPOINT, GET_PROJECTS, { locale });
   console.log("Projects fetched:", data);
@@ -44,8 +44,8 @@ export async function getFiles() {
 }
 
 const GET_BOARD_MEMBERS = gql`
-  query BoardMembers {
-    boardMembers(orderBy: order_ASC) {
+  query BoardMembers($locale: Locale!) {
+    boardMembers(locales: [$locale, en], orderBy: order_ASC) {
       id
       image {
         url
@@ -57,8 +57,8 @@ const GET_BOARD_MEMBERS = gql`
   }
 `;
 
-export async function getBoardMembers() {
-  const data = await request(API_ENDPOINT, GET_BOARD_MEMBERS);
+export async function getBoardMembers(locale = "en") {
+  const data = await request(API_ENDPOINT, GET_BOARD_MEMBERS, { locale });
   return data;
 }
 

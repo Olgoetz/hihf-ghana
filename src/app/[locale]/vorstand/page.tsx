@@ -9,11 +9,12 @@ import {
 } from "@/components/ui/card";
 import { getBoardMembers, getProjects } from "@/lib/graphql";
 import { Separator } from "@/components/ui/separator";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 export default async function Projects() {
   const t = await getTranslations("vorstand");
-  const { boardMembers } = (await getBoardMembers()) as any;
+  const locale = await getLocale();
+  const { boardMembers } = (await getBoardMembers(locale)) as any;
 
   return (
     <div className="pt-8 flex flex-col gap-y-14">
