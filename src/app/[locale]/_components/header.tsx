@@ -74,6 +74,27 @@ export default function Header() {
           <p className="leading-loose">{t("foundation2021Content")}</p>
         </div>
       </div>
+      
+      <div className="grid md:grid-cols-3 gap-4 pt-8">
+        <div className="md:col-span-2">
+          <div className="flex items-center py-4">
+            <CalendarClock className="mr-5 h-10 w-10 text-hih-primary shrink-0" />
+            <h2 className="text-lg md:text-xl font-bold">
+              {t("foundationUSATitle")}
+            </h2>
+          </div>
+          <p className="leading-loose">{t("foundationUSAContent")}</p>
+        </div>
+        <div className="relative h-[300px] w-full md:col-span-1 ">
+          <Image
+            src="/hero_usa.jpg"
+            alt="Help is Here Foundation US"
+            fill
+            className="object-cover rounded-lg"
+          />
+        </div>
+      </div>
+      
     </div>
   );
 }
