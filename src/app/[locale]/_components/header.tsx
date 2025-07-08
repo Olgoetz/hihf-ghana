@@ -58,7 +58,7 @@ export default function Header() {
       <div className="grid md:grid-cols-3 gap-4 ">
         <div className="relative h-[300px]   w-full md:col-span-1">
           <Image
-            src="/hero_2.jpg"
+            src="/germany2021.jpg"
             alt="Help is Here for Ghana e.V."
             fill
             className="object-cover rounded-lg "
@@ -87,7 +87,7 @@ export default function Header() {
         </div>
         <div className="relative h-[300px] w-full md:col-span-1 ">
           <Image
-            src="/hero_usa.jpg"
+            src="/hero_2.jpg"
             alt="Help is Here Foundation US"
             fill
             className="object-cover rounded-lg"
