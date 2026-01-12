@@ -27,7 +27,7 @@
     "graphql-request": "^6.1.0",
     "jsdom": "^26.0.0",
     "lucide-react": "^0.331.0",
-    "next": "^15.3.5",
+    "next": "15.3.8",
     "next-gallery": "^2.1.0",
     "next-intl": "^4.3.4",
     "react": "^19.1.0",
