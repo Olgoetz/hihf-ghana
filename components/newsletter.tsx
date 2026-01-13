@@ -10,7 +10,8 @@ function Newsletter() {
       </h2>
       <p className="leading-loose text-center py-8">{t("description")}</p>
       <iframe
-        src="https://te7f3b1bc.emailsys1a.net/248/462/7aab254095/subscribe/form.html?_g=1708449894"
+        src="https://newsletter.hihf-ghana.org/248/462/e11c7ac492/subscribe/form.html?_g=1768293178"
+        frameBorder="0"
         width="100%"
         height="550"
       ></iframe>
